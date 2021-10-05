@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block body %}
+  <h1 class="text-center">Dashboard</h1>
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <p>Welcome to the dashboard, {{ g.user.fname }}!</p>
+      <p>Your user information has been pulled from <a href="https://www.id.me/">ID.me</a>.
+      Your user email (<code>{{ g.user.email }}</code>)!</p>
+    </div>
+  </div>
+{% endblock %}
